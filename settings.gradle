@@ -1,0 +1,2 @@
+rootProject.name = "CheckWork202106"
+include ':app'
