@@ -18,6 +18,25 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView)
 
+        val actionMoji = mutableListOf(
+            ":Life is Tech!",
+            "名古屋土曜",
+            "Androidコース",
+            "あみだ班"
+        )
+        val actionColor = mutableListOf(
+            "#e60033",
+            "#316745",
+            "#4d4398",
+            "#432f2f"
+        )
+        val actionSize = mutableListOf(
+            32F,
+            24F,
+            40F,
+            16F
+        )
+
         findViewById<Button>(R.id.button).setOnClickListener{
             zyoutai++
             num++
@@ -26,32 +45,43 @@ class MainActivity : AppCompatActivity() {
                 zyoutai = 0
             }
 
+            textView.text = num.toString() + actionMoji[zyoutai]
+            textView.setTextColor(Color.parseColor(actionColor[zyoutai]))
+            textView.textSize = actionSize[zyoutai]
 
-            when(zyoutai){
-                0 -> {
-                    textView.text = "$num:Life is Tech!"
-                    textView.setTextColor(Color.parseColor("#e60033"))
-                    textView.textSize = 32F
-                }
-                1 -> {
-                    textView.text = "$num:名古屋土曜"
-                    textView.setTextColor(Color.parseColor("#316745"))
-                    textView.textSize = 24F
-                }
-                2 -> {
-                    textView.text = "$num:Androidコース"
-                    textView.setTextColor(Color.parseColor("#4d4398"))
-                    textView.textSize = 40F
 
-                }
-                3 -> {
-                    textView.text = "$num:あみだ班"
-                    textView.setTextColor(Color.parseColor("#432f2f"))
-                    textView.textSize = 16F
 
-                }
+//            when(zyoutai){
+//                0 -> {
+//                    textView.text = "$num:Life is Tech!"
+//                    textView.setTextColor(Color.parseColor("#e60033"))
+//                    textView.textSize = 32F
+//                }
+//                1 -> {
+//                    textView.text = "$num:名古屋土曜"
+//                    textView.setTextColor(Color.parseColor("#316745"))
+//                    textView.textSize = 24F
+//                }
+//                2 -> {
+//                    textView.text = "$num:Androidコース"
+//                    textView.setTextColor(Color.parseColor("#4d4398"))
+//                    textView.textSize = 40F
+//
+//                }
+//                3 -> {
+//                    textView.text = "$num:あみだ班"
+//                    textView.setTextColor(Color.parseColor("#432f2f"))
+//                    textView.textSize = 16F
+//
+//                }
+//
+//            }
 
-            }
+
+
+
+
+
 
         }
 
