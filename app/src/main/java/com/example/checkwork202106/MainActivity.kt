@@ -34,12 +34,20 @@ class MainActivity : AppCompatActivity() {
                     textView.textSize = 32F
                 }
                 1 -> {
-
+                    textView.text = "$num:名古屋土曜"
+                    textView.setTextColor(Color.parseColor("#316745"))
+                    textView.textSize = 24F
                 }
                 2 -> {
+                    textView.text = "$num:Androidコース"
+                    textView.setTextColor(Color.parseColor("#4d4398"))
+                    textView.textSize = 40F
 
                 }
                 3 -> {
+                    textView.text = "$num:あみだ班"
+                    textView.setTextColor(Color.parseColor("#432f2f"))
+                    textView.textSize = 16F
 
                 }
 
