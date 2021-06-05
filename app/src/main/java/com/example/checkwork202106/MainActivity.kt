@@ -37,6 +37,14 @@ class MainActivity : AppCompatActivity() {
             16F
         )
 
+        val action = mutableListOf(
+            mutableListOf(":Life is Tech!","名古屋土曜", "Androidコース", "あみだ班"),
+            mutableListOf("#e60033", "#316745", "#4d4398", "#432f2f"),
+            mutableListOf(32F, 24F, 40F, 16F)
+
+        )
+
+
         findViewById<Button>(R.id.button).setOnClickListener{
             zyoutai++
             num++
